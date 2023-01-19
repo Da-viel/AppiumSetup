@@ -30,10 +30,7 @@ public class CreateDriverSessionForPinch {
                 caps.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 8");
                 caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
                 caps.setCapability(MobileCapabilityType.UDID, "BC53CDCB-EA39-4614-BD06-0AB7173CF968");
-                appUrl = System.getProperty("user.dir") + File.separator + "src" + File.separator + "main" +
-                        File.separator + "resources" + File.separator + "UIKitCatalog-iphonesimulator.app";
-                caps.setCapability(MobileCapabilityType.APP, appUrl);
-                //caps.setCapability("bundleId", "com.example.apple-samplecode.UICatalog");
+                caps.setCapability("bundleId", "com.apple.Maps");
 
                 caps.setCapability("simulatorStartupTimeout", 180000);
                 return new IOSDriver(url, caps);
