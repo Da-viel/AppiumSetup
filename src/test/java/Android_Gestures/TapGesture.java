@@ -11,7 +11,6 @@ public class TapGesture {
     //This can be useful when u need to tap/click in a white space
     public static void main(String[] args) throws Exception {
         AppiumDriver driver = CreateDriverSession.initializeDriver("Android");
-
         clickGesture(driver);
     }
 
