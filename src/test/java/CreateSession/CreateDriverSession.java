@@ -26,6 +26,8 @@ public class CreateDriverSession {
                 caps.setCapability(MobileCapabilityType.APP, appUrl);
                 caps.setCapability("avd", "Pixel_4_API_30");
                 caps.setCapability("avdLaunchTimeout", 120000);
+                //caps.setCapability("unlockType", "password");
+                //caps.setCapability("unlockKey", "hola");
                 return new AndroidDriver(url, caps);
             case "iOS":
                 caps.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 8");
